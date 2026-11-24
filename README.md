@@ -76,10 +76,5 @@ qonnx 0.3.0.post1.dev100+gfd61cfe, PyTorch 1.13.1, ONNX 1.13.0, ONNX Runtime 1.1
 PYNQ image v3.1 (pynq 3.1.1). Pretrained CNV models are downloaded by FINN (`get_test_model_trained`); no weights are
 redistributed here.
 
-## AI assistance
-Parts of the build/analysis code and of this documentation were drafted with the help of a generative AI assistant
-(Claude, Anthropic) under the authors' direction. All code was run and all results were measured on hardware and
-checked by the authors.
-
 ## License
 BSD 3-Clause (see [`LICENSE`](LICENSE)), the same license as FINN.
