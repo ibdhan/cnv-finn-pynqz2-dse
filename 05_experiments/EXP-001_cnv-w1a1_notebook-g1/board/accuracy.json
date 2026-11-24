@@ -1,0 +1,11 @@
+{
+  "date": "2025-05-03T17:33:26",
+  "npz": "cifar10_test.npz",
+  "bitfile": "resizer.bit",
+  "n_samples": 10000,
+  "batchsize": 1000,
+  "correct": 8419,
+  "top1_acc_pct": 84.19,
+  "wall_s": 5.197553685000003,
+  "fps_incl_host": 1923.9820511829876
+}

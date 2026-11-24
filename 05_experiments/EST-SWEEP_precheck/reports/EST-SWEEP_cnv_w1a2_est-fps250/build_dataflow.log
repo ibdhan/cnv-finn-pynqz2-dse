@@ -1,0 +1,37 @@
+[2026-11-21 08:30:52,610] Running step: step_qonnx_to_finn [1/11]
+[2026-11-21 08:30:53,603] Running step: step_tidy_up [2/11]
+[2026-11-21 08:30:53,811] Running step: step_cnv_pre_post [3/11]
+[2026-11-21 08:30:53,907] /home/user/finn/deps/qonnx/src/qonnx/transformation/merge_onnx_models.py:70: UserWarning: [MergeONNXModels] opsets for models to merge differ: 13 vs 14, output model will use opset 14
+[2026-11-21 08:30:53,907]   warnings.warn(
+[2026-11-21 08:30:53,982] /home/user/finn/deps/qonnx/src/qonnx/transformation/infer_data_layouts.py:127: UserWarning: Assuming 4D input is NCHW
+[2026-11-21 08:30:53,982]   warnings.warn("Assuming 4D input is NCHW")
+[2026-11-21 08:30:54,372] Running step: step_cnv_streamline [4/11]
+[2026-11-21 08:31:00,278] Running step: step_convert_to_hw [5/11]
+[2026-11-21 08:31:00,431] Running step: step_create_dataflow_partition [6/11]
+[2026-11-21 08:31:00,458] Running step: step_specialize_layers [7/11]
+[2026-11-21 08:31:00,487] Running step: step_give_unique_names [8/11]
+[2026-11-21 08:31:00,494] Running step: step_target_fps_parallelization [9/11]
+[2026-11-21 08:31:00,499] /home/user/finn/src/finn/transformation/fpgadataflow/set_folding.py:221: UserWarning: SetFolding doesn't know how to handle op_type StreamingMaxPool_hls
+[2026-11-21 08:31:00,499]   warnings.warn("SetFolding doesn't know how to handle op_type " + op_type)
+[2026-11-21 08:31:00,509] /home/user/finn/src/finn/custom_op/fpgadataflow/streamingmaxpool.py:139: UserWarning: Estimated latency for layer StreamingMaxPool_hls_0 can be lower than
+[2026-11-21 08:31:00,509]              actual latency!
+[2026-11-21 08:31:00,509]   warnings.warn(
+[2026-11-21 08:31:00,510] /home/user/finn/src/finn/custom_op/fpgadataflow/streamingmaxpool.py:139: UserWarning: Estimated latency for layer StreamingMaxPool_hls_1 can be lower than
+[2026-11-21 08:31:00,510]              actual latency!
+[2026-11-21 08:31:00,510]   warnings.warn(
+[2026-11-21 08:31:00,521] Running step: step_minimize_bit_width_skip_xnor [10/11]
+[2026-11-21 08:31:00,528] /home/user/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:492: UserWarning: Clipping some thresholds in MVAU_hls_0
+[2026-11-21 08:31:00,528]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2026-11-21 08:31:00,534] /home/user/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:492: UserWarning: Clipping some thresholds in MVAU_hls_1
+[2026-11-21 08:31:00,534]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2026-11-21 08:31:00,540] /home/user/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:492: UserWarning: Clipping some thresholds in MVAU_hls_2
+[2026-11-21 08:31:00,540]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2026-11-21 08:31:00,548] /home/user/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:492: UserWarning: Clipping some thresholds in MVAU_hls_3
+[2026-11-21 08:31:00,548]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2026-11-21 08:31:00,559] /home/user/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:492: UserWarning: Clipping some thresholds in MVAU_hls_4
+[2026-11-21 08:31:00,559]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2026-11-21 08:31:00,582] /home/user/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:492: UserWarning: Clipping some thresholds in MVAU_hls_6
+[2026-11-21 08:31:00,582]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2026-11-21 08:31:00,593] /home/user/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:492: UserWarning: Clipping some thresholds in MVAU_hls_7
+[2026-11-21 08:31:00,593]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2026-11-21 08:31:00,619] Running step: step_generate_estimate_reports [11/11]

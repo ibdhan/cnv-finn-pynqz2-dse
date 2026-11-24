@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.pth
+*.pt
+*.npz
+finn_build/
+build_output/
+*.zip
+*.tar.gz
+.DS_Store
+Thumbs.db
+desktop.ini

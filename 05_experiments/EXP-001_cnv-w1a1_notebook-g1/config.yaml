@@ -1,0 +1,11 @@
+exp_id: EXP-001
+model: cnv
+dataset: cifar10
+w_bits: 1
+a_bits: 1
+target_fps: null              # notebook memakai folding manual bawaan (lihat notes.md)
+folding_config: notebook-default
+synth_clk_period_ns: 10.0     # 100 MHz, nilai bawaan notebook (target_clk_ns)
+board: Pynq-Z2
+flow: notebooks/end2end_example/bnn-pynq/cnv_end2end_example.ipynb (FINN v0.10.1)
+pretrained: brevitas_examples get_test_model_trained("CNV", 1, 1)

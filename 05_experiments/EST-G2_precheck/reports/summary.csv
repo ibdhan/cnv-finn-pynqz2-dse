@@ -1,0 +1,7 @@
+config,LUT,BRAM_18K,URAM,DSP,est_fps,est_latency_ms,critical_path_cycles,max_cycles,max_cycles_node,LUT_pct,BRAM_18K_pct,DSP_pct
+EST-G2_cnv_w1a1_est-large,23159,147,0,0,3051.8,2.494,249362,32768,MVAU_hls_6,43.5,52.5,0.0
+EST-G2_cnv_w1a1_est-small,13777,86,0,0,868.1,7.202,720242,115200,MVAU_hls_3,25.9,30.7,0.0
+EST-G2_cnv_w1a2_est-large,38175,284,0,0,3051.8,2.494,249362,32768,MVAU_hls_6,71.8,101.4,0.0
+EST-G2_cnv_w1a2_est-small,20980,171,0,0,868.1,7.202,720242,115200,MVAU_hls_3,39.4,61.1,0.0
+EST-G2_cnv_w2a2_est-large,38175,284,0,0,3051.8,2.494,249362,32768,MVAU_hls_6,71.8,101.4,0.0
+EST-G2_cnv_w2a2_est-small,20980,171,0,0,868.1,7.202,720242,115200,MVAU_hls_3,39.4,61.1,0.0

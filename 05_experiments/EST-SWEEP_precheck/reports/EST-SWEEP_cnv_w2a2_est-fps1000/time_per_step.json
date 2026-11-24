@@ -1,0 +1,13 @@
+{
+  "step_qonnx_to_finn": 0.6333827972412109,
+  "step_tidy_up": 0.11867642402648926,
+  "step_cnv_pre_post": 0.34190940856933594,
+  "step_cnv_streamline": 4.911540985107422,
+  "step_convert_to_hw": 0.1364285945892334,
+  "step_create_dataflow_partition": 0.02279520034790039,
+  "step_specialize_layers": 0.027454853057861328,
+  "step_give_unique_names": 0.0017275810241699219,
+  "step_target_fps_parallelization": 0.024403095245361328,
+  "step_minimize_bit_width_skip_xnor": 0.09103894233703613,
+  "step_generate_estimate_reports": 0.04532027244567871
+}

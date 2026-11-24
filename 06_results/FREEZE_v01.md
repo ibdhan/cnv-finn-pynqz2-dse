@@ -1,0 +1,84 @@
+# FREEZE v01
+
+- Waktu (UTC): 2026-11-21T13:01:49 (= 20:01 WIB)
+- Commit repo saat freeze: `c617123`
+- Skrip: `04_code/analysis/freeze_results.py --version v01`
+- Eksperimen masuk (11): EXP-001, EXP-003, EXP-004, EXP-005, EXP-006, EXP-007, EXP-008, EXP-009, EXP-010, EXP-011, EXP-012
+- Dikecualikan: EXP-002 (superseded)
+
+## Checksum sumber (sha256, 16 karakter)
+- `05_experiments/EXP-001_cnv-w1a1_notebook-g1/board/accuracy.json` dc8c927ef53ca3ea
+- `05_experiments/EXP-001_cnv-w1a1_notebook-g1/board/nw_metrics_bs1000.txt` f0337f6a91967d20
+- `05_experiments/EXP-001_cnv-w1a1_notebook-g1/board/nw_metrics_bs1.txt` f32ac6f114c5fd15
+- `05_experiments/EXP-001_cnv-w1a1_notebook-g1/reports/top_wrapper_utilization_placed.rpt` 7c0b7b8cc98f9389
+- `05_experiments/EXP-001_cnv-w1a1_notebook-g1/reports/top_wrapper_timing_summary_routed.rpt` 2d818010121c8023
+- `05_experiments/EXP-003_cnv-w1a2_small/board/accuracy.json` ee4dccf4a87aee75
+- `05_experiments/EXP-003_cnv-w1a2_small/board/nw_metrics_bs1000.txt` 51d0a87643bf9819
+- `05_experiments/EXP-003_cnv-w1a2_small/board/nw_metrics_bs1.txt` ec9a50e336b49404
+- `05_experiments/EXP-003_cnv-w1a2_small/reports/post_place_utilization.rpt` c767c9414ee630f0
+- `05_experiments/EXP-003_cnv-w1a2_small/reports/post_route_timing.rpt` a09c5b2901e434b3
+- `05_experiments/EXP-003_cnv-w1a2_small/reports/estimate_network_performance.json` c717153b1458039b
+- `05_experiments/EXP-003_cnv-w1a2_small/reports/build_meta.json` d4fae1e3946f5299
+- `05_experiments/EXP-004_cnv-w2a2_small/board/accuracy.json` d779850931af4b9f
+- `05_experiments/EXP-004_cnv-w2a2_small/board/nw_metrics_bs1000.txt` 6494c0c1f8e5ebd1
+- `05_experiments/EXP-004_cnv-w2a2_small/board/nw_metrics_bs1.txt` 8b885e83ed01ea76
+- `05_experiments/EXP-004_cnv-w2a2_small/reports/post_place_utilization.rpt` 699ede325a4e25de
+- `05_experiments/EXP-004_cnv-w2a2_small/reports/post_route_timing.rpt` a67b21a2128467a6
+- `05_experiments/EXP-004_cnv-w2a2_small/reports/estimate_network_performance.json` c717153b1458039b
+- `05_experiments/EXP-004_cnv-w2a2_small/reports/build_meta.json` 5caba47449eb0fc4
+- `05_experiments/EXP-005_cnv-w1a1_small/board/accuracy.json` 4553431a838088ca
+- `05_experiments/EXP-005_cnv-w1a1_small/board/nw_metrics_bs1000.txt` 20ea8d179d71b9eb
+- `05_experiments/EXP-005_cnv-w1a1_small/board/nw_metrics_bs1.txt` a3cd5a883c0c1281
+- `05_experiments/EXP-005_cnv-w1a1_small/reports/post_place_utilization.rpt` 0fa2d239f6fc1401
+- `05_experiments/EXP-005_cnv-w1a1_small/reports/post_route_timing.rpt` 92acbe239a27c5a6
+- `05_experiments/EXP-005_cnv-w1a1_small/reports/estimate_network_performance.json` c717153b1458039b
+- `05_experiments/EXP-005_cnv-w1a1_small/reports/build_meta.json` 22b328483c37d1f4
+- `05_experiments/EXP-006_cnv-w1a1_large/board/accuracy.json` 1b1aa3fda590e1be
+- `05_experiments/EXP-006_cnv-w1a1_large/board/nw_metrics_bs1000.txt` 3608b4cd5d707ac1
+- `05_experiments/EXP-006_cnv-w1a1_large/board/nw_metrics_bs1.txt` 7584485cf82a6373
+- `05_experiments/EXP-006_cnv-w1a1_large/reports/post_place_utilization.rpt` e9725c142f7a7694
+- `05_experiments/EXP-006_cnv-w1a1_large/reports/post_route_timing.rpt` 6013afb664c310be
+- `05_experiments/EXP-006_cnv-w1a1_large/reports/estimate_network_performance.json` f75dabf3a71fd86d
+- `05_experiments/EXP-006_cnv-w1a1_large/reports/build_meta.json` a63c00d69b5cb00d
+- `05_experiments/EXP-007_cnv-w1a1_fps250/board/accuracy.json` 3a4851096fe92dc4
+- `05_experiments/EXP-007_cnv-w1a1_fps250/board/nw_metrics_bs1000.txt` 299339a6c85f2b9c
+- `05_experiments/EXP-007_cnv-w1a1_fps250/board/nw_metrics_bs1.txt` 65674639767f40d7
+- `05_experiments/EXP-007_cnv-w1a1_fps250/reports/post_place_utilization.rpt` c5f2eaba83ad9f4c
+- `05_experiments/EXP-007_cnv-w1a1_fps250/reports/post_route_timing.rpt` 7b897cddb0dd8aa1
+- `05_experiments/EXP-007_cnv-w1a1_fps250/reports/estimate_network_performance.json` 0ea7b82c1f8bb48b
+- `05_experiments/EXP-007_cnv-w1a1_fps250/reports/build_meta.json` 84d04f9e373860d4
+- `05_experiments/EXP-008_cnv-w1a1_fps500/board/accuracy.json` b1c11cd60b993784
+- `05_experiments/EXP-008_cnv-w1a1_fps500/board/nw_metrics_bs1000.txt` 81531ea7760fde3b
+- `05_experiments/EXP-008_cnv-w1a1_fps500/board/nw_metrics_bs1.txt` c3daa863072902e6
+- `05_experiments/EXP-008_cnv-w1a1_fps500/reports/post_place_utilization.rpt` 342f48bc6f9850dc
+- `05_experiments/EXP-008_cnv-w1a1_fps500/reports/post_route_timing.rpt` 7ea2ea9fa96a9d01
+- `05_experiments/EXP-008_cnv-w1a1_fps500/reports/estimate_network_performance.json` 0a067403d4b224d4
+- `05_experiments/EXP-008_cnv-w1a1_fps500/reports/build_meta.json` db89f17122e8a71c
+- `05_experiments/EXP-009_cnv-w1a1_fps1000/board/accuracy.json` c33b1374141773f2
+- `05_experiments/EXP-009_cnv-w1a1_fps1000/board/nw_metrics_bs1000.txt` 27c85463adc14278
+- `05_experiments/EXP-009_cnv-w1a1_fps1000/board/nw_metrics_bs1.txt` 97ac0bec2a51b618
+- `05_experiments/EXP-009_cnv-w1a1_fps1000/reports/post_place_utilization.rpt` b1fff4a51a1dd0cb
+- `05_experiments/EXP-009_cnv-w1a1_fps1000/reports/post_route_timing.rpt` 821c222ddeb7bb18
+- `05_experiments/EXP-009_cnv-w1a1_fps1000/reports/estimate_network_performance.json` 91fce27ba96707f7
+- `05_experiments/EXP-009_cnv-w1a1_fps1000/reports/build_meta.json` 1f7173111fdce398
+- `05_experiments/EXP-010_cnv-w1a1_fps2000/board/accuracy.json` ffe98ea89688e649
+- `05_experiments/EXP-010_cnv-w1a1_fps2000/board/nw_metrics_bs1000.txt` c7f5c48c65d95e88
+- `05_experiments/EXP-010_cnv-w1a1_fps2000/board/nw_metrics_bs1.txt` 99da482231f9b38b
+- `05_experiments/EXP-010_cnv-w1a1_fps2000/reports/post_place_utilization.rpt` 1e6eeef97260fb54
+- `05_experiments/EXP-010_cnv-w1a1_fps2000/reports/post_route_timing.rpt` 7b8a238ca3543c36
+- `05_experiments/EXP-010_cnv-w1a1_fps2000/reports/estimate_network_performance.json` 0834071d1e05f88a
+- `05_experiments/EXP-010_cnv-w1a1_fps2000/reports/build_meta.json` 22cf0a47b1cc3176
+- `05_experiments/EXP-011_cnv-w1a1_fps3000/board/accuracy.json` dc8ec46d6162f6ad
+- `05_experiments/EXP-011_cnv-w1a1_fps3000/board/nw_metrics_bs1000.txt` 9dcbec909a8f3bdf
+- `05_experiments/EXP-011_cnv-w1a1_fps3000/board/nw_metrics_bs1.txt` 0f18b6b92dc389dc
+- `05_experiments/EXP-011_cnv-w1a1_fps3000/reports/post_place_utilization.rpt` 0be8508d6c8e9afb
+- `05_experiments/EXP-011_cnv-w1a1_fps3000/reports/post_route_timing.rpt` 179333f4d7353654
+- `05_experiments/EXP-011_cnv-w1a1_fps3000/reports/estimate_network_performance.json` 6e8d4678d321ed18
+- `05_experiments/EXP-011_cnv-w1a1_fps3000/reports/build_meta.json` 541938d02434a943
+- `05_experiments/EXP-012_cnv-w2a2_fps250/board/accuracy.json` 2cc8fe11009802f8
+- `05_experiments/EXP-012_cnv-w2a2_fps250/board/nw_metrics_bs1000.txt` 46fb80c154088dbc
+- `05_experiments/EXP-012_cnv-w2a2_fps250/board/nw_metrics_bs1.txt` 4b5505e57099977d
+- `05_experiments/EXP-012_cnv-w2a2_fps250/reports/post_place_utilization.rpt` da399ff3221e04c2
+- `05_experiments/EXP-012_cnv-w2a2_fps250/reports/post_route_timing.rpt` 310753d82146a970
+- `05_experiments/EXP-012_cnv-w2a2_fps250/reports/estimate_network_performance.json` 3b9788663d3abab7
+- `05_experiments/EXP-012_cnv-w2a2_fps250/reports/build_meta.json` 4a6d8fc612da2681

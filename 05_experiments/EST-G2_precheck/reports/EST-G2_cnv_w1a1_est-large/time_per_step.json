@@ -1,0 +1,13 @@
+{
+  "step_qonnx_to_finn": 0.5123693943023682,
+  "step_tidy_up": 0.09109878540039062,
+  "step_cnv_pre_post": 0.27379322052001953,
+  "step_cnv_streamline": 4.936417102813721,
+  "step_convert_to_hw": 0.15515947341918945,
+  "step_create_dataflow_partition": 0.023174762725830078,
+  "step_specialize_layers": 0.02118396759033203,
+  "step_give_unique_names": 0.0016837120056152344,
+  "step_apply_cnv_folding_large": 0.0011165142059326172,
+  "step_minimize_bit_width": 0.09229874610900879,
+  "step_generate_estimate_reports": 0.04526329040527344
+}

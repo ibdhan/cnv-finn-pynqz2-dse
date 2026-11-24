@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.pth
+*.pt
+finn_build/
+build_output/
+*.zip

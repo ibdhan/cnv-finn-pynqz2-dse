@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-21T12:53:33",
+  "npz": "/home/xilinx/cifar10_test.npz",
+  "bitfile": "../bitfile/finn-accel.bit",
+  "n_samples": 10000,
+  "batchsize": 1000,
+  "correct": 8863,
+  "top1_acc_pct": 88.63,
+  "wall_s": 33.455910190000054,
+  "fps_incl_host": 298.90085019982484
+}

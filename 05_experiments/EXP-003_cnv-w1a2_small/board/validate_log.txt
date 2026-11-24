@@ -1,0 +1,23 @@
+data: x(10000, 32, 32, 3) uint8, y(10000,) int32
+batch 1/10: benar 892 dari 1000
+batch 2/10: benar 1763 dari 2000
+batch 3/10: benar 2645 dari 3000
+batch 4/10: benar 3509 dari 4000
+batch 5/10: benar 4384 dari 5000
+batch 6/10: benar 5259 dari 6000
+batch 7/10: benar 6148 dari 7000
+batch 8/10: benar 7027 dari 8000
+batch 9/10: benar 7893 dari 9000
+batch 10/10: benar 8776 dari 10000
+{
+  "date": "2026-11-21T04:29:18",
+  "npz": "/home/xilinx/cifar10_test.npz",
+  "bitfile": "../bitfile/finn-accel.bit",
+  "n_samples": 10000,
+  "batchsize": 1000,
+  "correct": 8776,
+  "top1_acc_pct": 87.76,
+  "wall_s": 11.74064741600003,
+  "fps_incl_host": 851.7417860936788
+}
+Final accuracy: 87.76%  -> accuracy.json
