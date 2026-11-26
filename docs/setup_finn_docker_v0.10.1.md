@@ -14,7 +14,7 @@
    v0.10.1 is the last FINN release paired with Vivado 2022.2 that still targets the Pynq-Z1/Z2 out of the box.
 2. Load the environment of this repository (edit paths/IP inside first):
    ```bash
-   source <repo>/04_code/configs/finn_env.sh
+   source <repo>/code/configs/finn_env.sh
    ```
 3. Quicktest (also builds the image the first time):
    ```bash

@@ -21,7 +21,7 @@ No gateway is set, so the host keeps its normal internet route.
 
 ## C. Running a FINN accelerator on PYNQ 3.x: root + pynq_venv + **xrt_setup**
 PYNQ 3.x finds the FPGA through XRT; without `xrt_setup.sh` you get `RuntimeError: No Devices Found`.
-Use the wrapper `04_code/deploy/pynq_run.sh`:
+Use the wrapper `code/deploy/pynq_run.sh`:
 ```bash
 sudo ./pynq_run.sh python3 validate_npz.py --npz ~/cifar10_test.npz --batchsize 1000
 sudo ./pynq_run.sh python3 driver.py --exec_mode=throughput_test --batchsize 1000
@@ -42,7 +42,7 @@ On the board: `source /etc/profile.d/pynq_venv.sh && sudo $(which pip3) install 
 
 ## F. Test set
 The board cannot download CIFAR-10. Create `cifar10_test.npz` on the host with
-`04_code/analysis/make_cifar10_npz.py` (inside the FINN container); `measure_on_board.sh` copies it to the board.
+`code/analysis/make_cifar10_npz.py` (inside the FINN container); `measure_on_board.sh` copies it to the board.
 
 ## Common problems
 | Symptom | Cause | Fix |

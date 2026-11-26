@@ -25,9 +25,9 @@ tables and figures, and setup notes. It accompanies a manuscript submitted for p
 | EXP-004 | W2A2 | preset small | 88.63 | 865.6 | 4.347 | 35,406 (66.5 %) | 122 (87.1 %) | 0 |
 | EXP-012 | W2A2 | target_fps 250 + small RAM styles | 88.63 | 300.6 | 12.153 | 32,505 (61.1 %) | 127 (90.7 %) | 220 |
 
-Source: [`06_results/tables/results_v01.csv`](06_results/tables/results_v01.csv) (complete table) — figures in
-[`06_results/figures/`](06_results/figures/) (`*_en` = English labels). The two data figures of the manuscript are `fig_resource_floor_en` and `fig_estimate_latency_en`
-(`04_code/analysis/make_figures_v07.py`). Device capacity: 53,200 LUT, 140 BRAM tiles, 220 DSP.
+Source: [`results/tables/results_v01.csv`](results/tables/results_v01.csv) (complete table) — figures in
+[`results/figures/`](results/figures/) (`*_en` = English labels). The two data figures of the manuscript are `fig_resource_floor_en` and `fig_estimate_latency_en`
+(`code/analysis/make_figures_v07.py`). Device capacity: 53,200 LUT, 140 BRAM tiles, 220 DSP.
 
 Highlights:
 - Accuracy is bit-exact across all folding settings of the same precision (W1A1 84.19 %, W2A2 88.63 %).
@@ -42,16 +42,17 @@ Highlights:
 
 | Path | Contents |
 |---|---|
-| [`04_code/`](04_code/) | build, deployment and analysis scripts ([overview](04_code/README.md)) |
-| [`05_experiments/`](05_experiments/) | one folder per experiment: FINN/Vivado reports, board measurements, bitstream + driver (`board/deploy/`), `notes.md`; index in `registry.csv` |
-| [`06_results/`](06_results/) | frozen tables and figures (v01) with source checksums (`FREEZE_v01.md`) |
+| [`code/`](code/) | build, deployment and analysis scripts ([overview](code/README.md)) |
+| [`experiments/`](experiments/) | one folder per experiment: FINN/Vivado reports, board measurements, bitstream + driver (`board/deploy/`), `notes.md`; index in `registry.csv` |
+| [`results/`](results/) | frozen tables and figures (v01) with source checksums (`FREEZE_v01.md`) |
 | [`docs/`](docs/) | host, FINN and board setup; FINN issues found |
 
 `EXP-002` is kept as evidence of the accumulator issue and is excluded from the results (superseded by `EXP-005`).
 `EST-*` folders hold analytical estimates only (no hardware). Experiment `notes.md` files and some raw logs are lab notes
 written in Indonesian; all numbers in them are also in the machine-readable reports.
 In the raw logs and reports, the build host's user name was replaced by `user` (`/home/user/...`, host `finn_dev_user`);
-no other content of the raw files was changed.
+no other content of the raw files was changed. The source checksums in `results/FREEZE_v01.md` refer to the original files; the checksums of the
+changed files as published here are listed at the end of that file.
 
 ## Reproducing
 
@@ -59,16 +60,20 @@ no other content of the raw files was changed.
    [`docs/setup_finn_docker_v0.10.1.md`](docs/setup_finn_docker_v0.10.1.md), [`docs/setup_board_pynq_z2.md`](docs/setup_board_pynq_z2.md).
 2. Edit and load the environment, then build (inside the FINN container):
    ```bash
-   source 04_code/configs/finn_env.sh
-   cd $FINN_ROOT && ./run-docker.sh python $LIGHTCNN_ROOT/04_code/build/build.py \
+   source code/configs/finn_env.sh
+   cd $FINN_ROOT && ./run-docker.sh python $LIGHTCNN_ROOT/code/build/build.py \
        --exp EXP-100 --wbits 2 --abits 2 --folding small --mode estimate     # seconds, no Vivado
    # --mode full : bitstream + driver (~45-65 min);  --target-fps N instead of --folding for automatic folding
    ```
-   Use a new experiment ID (and add it to `05_experiments/registry.csv`) to avoid mixing with the published data.
-3. Create the offline test set once: `./run-docker.sh python $LIGHTCNN_ROOT/04_code/analysis/make_cifar10_npz.py --out $FINN_BUILD_DIR/cifar10_test.npz`
-4. Measure on the board from the host: `bash 04_code/deploy/measure_on_board.sh EXP-100`
+   Use a new experiment ID (and add it to `experiments/registry.csv`) to avoid mixing with the published data.
+3. Create the offline test set once: `./run-docker.sh python $LIGHTCNN_ROOT/code/analysis/make_cifar10_npz.py --out $FINN_BUILD_DIR/cifar10_test.npz`
+4. Measure on the board from the host: `bash code/deploy/measure_on_board.sh EXP-100`
 5. To check the published bitstreams directly, run step 4 with an existing ID (e.g. `EXP-006`); the bitstream and driver
-   are in `05_experiments/<EXP>/board/deploy/`.
+   are in `experiments/<EXP>/board/deploy/`.
+
+The analysis scripts in `code/analysis/` need Python 3 with NumPy and Matplotlib. Both are available inside the FINN
+container (`./run-docker.sh python $LIGHTCNN_ROOT/code/analysis/<script>.py ...`); on an Ubuntu host use
+`sudo apt install python3-numpy python3-matplotlib`.
 
 ## Tool versions
 FINN v0.10.1 (`9d299689f`), Docker image `xilinx/finn:v0.10.1.xrt_202220.2.14.354_22.04-amd64-xrt`, Brevitas 0.10.0,

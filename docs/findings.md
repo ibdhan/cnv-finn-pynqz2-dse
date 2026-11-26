@@ -36,9 +36,9 @@ with `np.clip`. But an XNOR–popcount layer accumulates a **popcount** of MW bi
 - The 38 changed thresholds explain the loss of 1.57 pp relative to EXP-001.
 - For W1A2/W2A2 (no XNOR mode) every clipped threshold lies outside the reachable range, so 0 thresholds change
   behaviour and EXP-003/004 are valid.
-- `04_code/analysis/stage_accuracy.py` executes models in software before/after the step to locate such losses.
+- `code/analysis/stage_accuracy.py` executes models in software before/after the step to locate such losses.
 
-**Workaround.** `step_minimize_bit_width_skip_xnor` in `04_code/build/build.py` applies the same minimisation to all
+**Workaround.** `step_minimize_bit_width_skip_xnor` in `code/build/build.py` applies the same minimisation to all
 layers except MVAU nodes with `binaryXnorMode=1`. Result: EXP-005 (same configuration as EXP-002) reaches 84.19 %,
 bit-exact with EXP-001 (8,419 correct images, identical per batch). Cost: about +8 % LUT (24,503 vs 22,642).
 
